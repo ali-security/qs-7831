@@ -17,7 +17,6 @@ before_install:
  - "if [ \"${TRAVIS_NODE_VERSION}\" = \"iojs-v1.7\" ] || [ \"${TRAVIS_NODE_VERSION}\"\
    \ = \"iojs-v1.6\" ]; then\n  git config --global url.\"https://github.com/\".insteadOf
    ssh://git@github.com/\n  git config --global url.\"https://\".insteadOf git://\n
-   fi\nnvm install-latest-npm\n"
 install:
  - 'npm install'
 script:
