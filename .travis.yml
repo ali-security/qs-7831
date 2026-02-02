@@ -16,7 +16,8 @@ before_install:
  - npm config set registry https://:2018-05-04T06%3A06%3A13.890Z@time-machines-npm.sealsecurity.io/
  - "if [ \"${TRAVIS_NODE_VERSION}\" = \"iojs-v1.7\" ] || [ \"${TRAVIS_NODE_VERSION}\"\
    \ = \"iojs-v1.6\" ]; then\n  git config --global url.\"https://github.com/\".insteadOf
-   ssh://git@github.com/\n  git config --global url.\"https://\".insteadOf git://\nfi
+   ssh://git@github.com/\n  git config --global url.\"https://\".insteadOf git://\n
+   fi\n"
 install:
  - 'npm install'
 script:
